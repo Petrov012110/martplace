@@ -1,17 +1,240 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+//header
+.header__top{
+    background-color: $bg;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    .header__btn{
+        width: 140px;
+        height: 36px;
+        background-color: $btn;
+        color: #fff;
+        text-align: center;
+        padding-top: 4px;
+        border-radius: 18px;
+    }
+    .header__box{
+        margin-right: 405px;
+    }
+}
+.header__menu-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.menu__list{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 34px;
+        }
+    }
+    a{
+        color: #000;
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 42px;
+        font-family: 'Quicksand-Regular', sans-serif;
+        font-weight: 500;
+    }
+}
+//search
+.header_menu-search{
+    padding-top: 17px;
+    width: 360px;
+    form{
+        margin: 0px auto;
+        position: relative;
+        input{
+            display: block;
+            width: 100%;
+            border-radius: 22px;
+            height: 44px;
+            border: 1px solid #d9dfe5;
+            outline: none;
+            padding-left: 17px;
+            &::placeholder{
+                color: #898f96;
+            }
+        }
+    }
+    button{
+        position: absolute;
+        border: none;
+        background-color: $btn;
+        right: 0px;
+        top: 0px;
+        bottom: 0;
+        border-radius: 22px;
+        height: 44px;
+        width: 70px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+//introduction
+.introduction{
+    background-color: $bg2;
+    &__inner{
+        text-align: center;
+        padding-top: 184px;
+        padding-bottom: 141px;
+        &-first_title{
+            line-height: 70px;
+            font-size: 60px;
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-weight: 400;
+        }
+        &-second_title{
+            line-height: 70px;
+            font-size: 60px;
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-weight: 700;
+        }
+        &-text{
+            font-family: 'Quicksand-Regular', sans-serif;
+            font-weight: 400; 
+            font-size: 20px;
+            margin-top: 36px;
+        }
+    }
+    .introduction__inner-btn{
+        margin-top: 68px;
+        button{
+            width: 190px;
+            height: 55px;
+            border-radius: 95px;
+            border: #fff 1px solid;
+            color: #fff;
+            background-color: transparent;
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 15px;
+            transition: 0.7s;
+        }
+        button:hover{
+            color: $btn;
+            background-color: #fff;
+            transition: 0.7s;
+        }
+    }
+
+}
+//search
+.search{
+    
+    .search__bg-blue{
+        height: 96px;
+        background-color: $bg2;
+    }
+    .search__bg-white{
+        height: 90px;;
+    }
+    .container{
+        position: relative;
+    
+        .search__inner{
+            position: absolute;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            top: -69px;
+            left: 30px;
+            max-width: 1140px;
+            border-radius: 6px;
+            z-index: 1;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+            &-form{
+                max-width: 808px;
+                margin-left: 40px;
+                position: relative;
+                input{
+                    display: block;
+                    width: 808px;
+                    border-radius: 4px;
+                    height: 53px;
+                    border: 1px solid #dcdcdc;
+                    font-size: 14px;
+                    outline: none;
+                    padding-left: 27px;
+                    padding-right: 200px;
+                    &::placeholder{
+                        color: #90a4ae;
+                    }
+                }
+                button{
+                    position: absolute;
+                    border: 1px solid #dcdcdc;
+                    background-color: transparent;
+                    right: 0;
+                    height: 53px;
+                    top: 0;
+                    width: 193px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    span{
+                        margin-top: 16px;
+                    }
+                    img{
+                        margin-top: 21px;
+                    }
+                }
+            }
+            .search__inner-btn{
+                width: 223px;
+                height: 55px;
+                margin-right: 40px;
+                margin-left: 30px;
+                background-color: $btn;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+        .search__inner-form-background{
+            background-color: rgb(255, 255, 255);
+            opacity: 0.502;
+            border-radius: 6px;
+            position: absolute;
+            &.first{
+                width: 1110px;
+                height: 100px;
+                top: -83px;
+                left: 45px;
+            }
+            &.second{
+                width: 1080px;
+                height: 100px;
+                top: -96px;
+                left: 60px;
+            }
+        }
+    }
 }
 
-.box{
-    display: flex;
 
-}
-body{
-    background-color: rgba(29, 44, 58, 0.8);
-    display: flex;
-}
+  
+
+
+  
+
+  
+
+  
