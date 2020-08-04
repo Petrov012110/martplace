@@ -19,7 +19,18 @@ $(function(){
         dots: false,
         prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/arrow-prev.png" alt=""></button>',
         nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/arrow-next.png" alt=""></button>',
-      });
+    });
+
+    $('.followers-slider__inner-content').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/arrow-prev.png" alt=""></button>',
+        nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/arrow-next.png" alt=""></button>',
+    });
 
     var mixer = mixitup('.products__inner-box');
+
+
 });

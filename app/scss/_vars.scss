@@ -6,7 +6,10 @@ $bg3: #f6f7fb;
 $grey: #747b86;
 $border: #ececec;
 
-
+@mixin f400{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
 @mixin f500{
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
