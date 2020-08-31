@@ -30,6 +30,14 @@ $(function(){
         nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/arrow-next.png" alt=""></button>',
     });
 
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle()
+    });
+    
+    $('.header__btn-menu').on('click', function(){
+        $('.header__box').toggleClass('active')
+    });
+
     var mixer = mixitup('.products__inner-box');
 
 
