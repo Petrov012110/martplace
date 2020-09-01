@@ -2175,6 +2175,12 @@
 //footer
 .footer{
     background-color: #262b30;
+    .footer__box{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
 }
 .footer__inner{
     display: flex;
@@ -2297,7 +2303,6 @@
             .link-linkedin{
                 background-position:  -61px -1px;
             }
-        
         }
         
         &-list li a, 

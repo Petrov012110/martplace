@@ -1,3 +1,15 @@
+@media (max-width: 1090px){
+    .footer{
+        .footer__inner {
+            display: block;
+        }
+        .footer__box{
+            justify-content: space-between;
+    
+        }
+    }
+
+}
 @media (max-width: 930px) {
     .menu__list{
         display: none;
@@ -6,7 +18,7 @@
         top: 120px;
         left: 0;
         right: 0;
-        z-index: 3;
+        z-index: 1;
         text-align: center;
 
         li{
@@ -31,6 +43,10 @@
     .menu__list .wordpress__box:hover .wordpress__box-menu, .menu__list .wordpress__box:hover .home__box-menu, .menu__list .wordpress__box:hover .products__box-menu, .menu__list .home__box:hover .wordpress__box-menu, .menu__list .home__box:hover .home__box-menu, .menu__list .home__box:hover .products__box-menu, .menu__list .products__box:hover .wordpress__box-menu, .menu__list .products__box:hover .home__box-menu, .menu__list .products__box:hover .products__box-menu {
         width: 100%;
     }
+    .footer__inner {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 785px) {
     .notification__box,
@@ -39,6 +55,11 @@
     }
     .header__top-inner .header__btn {
         margin-right: 31px;
+    }
+    .footer{
+        .newsletter{
+            max-width: 280px;
+        }
     }
 }
 @media (max-width: 660px){
@@ -100,6 +121,13 @@
 
         top: 70px;
 
+    }
+
+}
+@media (max-width: 615px){
+    .footer .footer__box {
+        display: block;
+        width: 100%;
     }
 }
 @media (max-width: 570px){
