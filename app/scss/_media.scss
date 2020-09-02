@@ -1,3 +1,17 @@
+@media (max-width: 1125px){
+    .product-slider .content__item-text {
+        padding: 16px 26px 0 22px;
+    }
+}
+@media (max-width: 1050px){
+    .product-slider .content__item-text {
+        padding: 16px 26px 0 22px;
+    }
+    .product-slider .content__item-text p {
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+}
 @media (max-width: 1090px){
     .footer{
         .footer__inner {
@@ -5,10 +19,8 @@
         }
         .footer__box{
             justify-content: space-between;
-    
         }
     }
-
 }
 @media (max-width: 930px) {
     .menu__list{
@@ -60,6 +72,10 @@
         .newsletter{
             max-width: 280px;
         }
+    }
+    .introduction__inner-first_title, 
+    .introduction__inner-second_title {
+        font-size: 50px;
     }
 }
 @media (max-width: 660px){
@@ -122,12 +138,46 @@
         top: 70px;
 
     }
+    .search .container .search__inner-form button {
+        width: 141px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search{
+        .search__inner-form{
+            input{
+                &::placeholder{
+                    display: none;
+                }
+            }
+        }
+    } 
+    .introduction__inner-first_title, 
+    .introduction__inner-second_title {
+        font-size: 38px;
+    }
 
 }
 @media (max-width: 615px){
+    .introduction__inner {
+        padding-top: 78px;
+    }
     .footer .footer__box {
         display: block;
         width: 100%;
+    }
+    .search .container .search__inner-form button{
+        span{
+            display: none;
+        }
+    }
+    .search .container .search__inner-form button {
+        width: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search .container .search__inner-form input {
+        padding-right: 56px;
     }
 }
 @media (max-width: 570px){
@@ -162,6 +212,10 @@
 
 }
 @media (max-width: 415px){
+    .introduction__inner-first_title, 
+    .introduction__inner-second_title {
+        font-size: 29px;
+    }
     .header__box.active {
         left: 59px;
     }
